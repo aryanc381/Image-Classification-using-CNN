@@ -1,5 +1,5 @@
 # Image Classification using CNN Model to classify two objects (in this case - cats and dogs)
-<p align="center"> <img src='https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/catdog.jpg',alt="catvdog" width='1550' height='450'/></p>
+<p align="center"> <img src='https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/catdog.jpg',alt="catvdog"/></p>
 
 In this project I have used a CNN model with mainly three filters with (32, 64, 128) nodes respectively to categorise two objects in different classes based on their features. The accuracy I had achieved as of ```10th-July-2024``` was 98.1% with 10 epochs of training on a v4-GPU on google-colab.
 ## Project Structure 

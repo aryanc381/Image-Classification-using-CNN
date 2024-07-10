@@ -47,7 +47,7 @@ The CNN Model has the following architecture :
 #### 2. **How it works :**
   - **Convolutional Operation** - Each filter slides across the input image. At each position, elementwise matrix multiplication is carried out b/w the filter and the image that is covered. Finally, the summation of those values results into a feature map.
   - **Activation** - After Convolution, an activation is added to add non-linearity to the neural network that is important to understand complex computations, ofcourse ML is maths after all and if this was all linear (which by the way is not the right method to understand patterns in an image because ofcourse images cant be linear every time) might as well call it a 'fancy linear-regression model' haha xD.
-<p align="center"><img src="https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/conv_layer.jpeg", alt="convlayer" width="700" height="300"/></p>
+<p align="center"><img src="https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/conv_layer.jpeg", alt="convlayer"/></p>
 
 - **Pooling** - Pooling which is an operation that is optional while developing a neural network is used to reduce the spatial dimensions of the feature map. This helps in reducing the computational load and also helps in reducing overfitting of data (This is something that I've learnt based on the projects I have made, not a declaration, it may work out differently for different data). Common pooling operations are ```Max-Pooling``` (taking the maximum value) and ```Min-Pooling``` (taking the minimum value).
 

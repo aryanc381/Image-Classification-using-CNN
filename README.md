@@ -118,3 +118,13 @@ pip install tensorflow keras numpy matplotlib opencv-python scikit-learn
 jupyter notebook catvdog.ipynb
 ```
 6. Run the cells in the notebook to train and evaluate the model.
+
+## References 
+1. Playlist for ML - [100 days of ML](https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH)
+2. Playlist for DL - [100 days of DL](https://www.youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn)
+3. CNN Fundamentals - [Introduction to CNNs](https://www.datacamp.com/tutorial/introduction-to-convolutional-neural-networks-cnns)
+
+## Courses 
+1. [DeepLearning Specialisation by Andrew Ng](https://www.coursera.org/specializations/deep-learning)
+2. [MachineLearning Specialisation by Andrew Ng](https://www.coursera.org/specializations/machine-learning-introduction)
+3. [Convolutional Neural Networks by deeplearning.ai](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow)

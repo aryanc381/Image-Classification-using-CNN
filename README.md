@@ -1,4 +1,4 @@
-# Image Classification using CNN Model to classify and categorise two objects (in this case, cats and dogs)
+# Image Classification using CNN Model to classify two objects (in this case - cats and dogs)
 <p align="center"> <img src='https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/catdog.jpg',alt="catvdog" width='1550' height='485'/></p>
 
 In this project I have used a CNN model with mainly three filters with (32, 64, 128) nodes respectively to categorise two objects in different classes based on their features. The accuracy I had achieved as of ```10th-July-2024``` was 98.1% with 10 epochs of training on a v4-GPU on google-colab.
@@ -20,6 +20,9 @@ You can install the required libraries using the following commands in python :
 ```bash
 pip install tensorflow keras numpy matplotlib opencv-python scikit-learn
 ```
+
+## Dataset
+Find the entire ```1.0GB``` dataset here : [training and testing dataset](https://www.kaggle.com/datasets/salader/dogs-vs-cats)
 
 ## Model Architecture 
 The CNN Model has the following architecture :
@@ -59,9 +62,9 @@ The CNN Model has the following architecture :
 - This value is assigned to the corresponding position in the output feature map.
 - The main advantage o MaxPooling Layer is that it reduces overfitting while keeping the most important features and neglecting the garbage features of an image.
 
-### Activation Functions
+### Functions
 
-#### **1. ReLU :**
+#### **1. ReLU Activation :**
 - I have used ReLU the most in a neural network.
 - for x >= 0 return x AND for x < 0 return 0.
 - This activation introduces non-linearity which is required to analyse complex patterns and sparse activations are seen as it outputs zero for any value that is less than zero.
@@ -71,8 +74,46 @@ The CNN Model has the following architecture :
 
 <p align='center'><img src="https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/relu_and_sigmoid.png", alt="sig_and_relu" width="600" height="200"/></p>
 
-#### **2. Sigmoid :**
+#### **2. Sigmoid Activation :**
 - I have used sigmoid function as the problem statement has binary classification of categories (in this case : cats and dogs).
 - Sigmoid function mainly represents a probability distribution working in the form of a smooth curve for binary classification.
 - Hence this was the perfect output layer for this application
 - I suggest you dive deep in understanding these activation functions that you can find in this playlist : [100 days of ML](https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH)
+
+#### **3. Adam Optimizer :**
+-  
+
+## Training
+The model was trained using the following configuration :
+- Loss Function : Binary Cross Entropy.
+- Optimizer : Adam for gradient descent.
+- Metrics : Accuracy.
+- Batch Size : 32
+- Number of epochs : 10
+The model is trained on the training dataset and cross-validated on the validation dataset. During training, I have mapped the training and validation accuracy along with losses to reduce overfitting.
+
+## Evaluation and Result
+The model evaluation concluded that a minimum of ```83.20%``` of accuracy is required for somewhat-accurate (for the images with a lot of noise) to accurate classification of image between dog and cat. 
+
+## Usage
+To use this project, follow these steps:
+
+1. Clone the repository to your local machine:
+```bash
+git clone https://github.com/yourusername/your-repository.git
+```
+2. Navigate to the project directory:
+```bash
+cd your-repository
+```
+3. Install the required packages:
+```bash
+pip install tensorflow keras numpy matplotlib opencv-python scikit-learn
+```
+4. Finally, download and extract the dataset as described in the Dataset section.
+
+5. Open the Jupyter Notebook:
+```bash
+jupyter notebook catvdog.ipynb
+```
+6. Run the cells in the notebook to train and evaluate the model.

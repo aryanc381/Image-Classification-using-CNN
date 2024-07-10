@@ -1,5 +1,5 @@
 # Image Classification using CNN Model to classify two objects (in this case - cats and dogs)
-<p align="center"> <img src='https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/catdog.jpg',alt="catvdog" width='1550' height='485'/></p>
+<p align="center"> <img src='https://github.com/aryanc381/Image-Classification-using-CNN/blob/main/catdog.jpg',alt="catvdog" width='1550' height='450'/></p>
 
 In this project I have used a CNN model with mainly three filters with (32, 64, 128) nodes respectively to categorise two objects in different classes based on their features. The accuracy I had achieved as of ```10th-July-2024``` was 98.1% with 10 epochs of training on a v4-GPU on google-colab.
 ## Project Structure 
@@ -81,7 +81,8 @@ The CNN Model has the following architecture :
 - I suggest you dive deep in understanding these activation functions that you can find in this playlist : [100 days of ML](https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH)
 
 #### **3. Adam Optimizer :**
--  
+-  In this CNN model, I used Adam Optimizer to achieve global minimum - as simple as that.
+-  It worked out well to be honest for binary classification. 
 
 ## Training
 The model was trained using the following configuration :

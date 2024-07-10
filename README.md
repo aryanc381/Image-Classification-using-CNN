@@ -132,9 +132,6 @@ Confusion Matrix:
 
 This project demonstrates how to build and train a CNN model for binary image classification. The model successfully classifies images of cats and dogs with a reasonable accuracy. Future improvements could include data augmentation, hyperparameter tuning, and exploring different model architectures.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
